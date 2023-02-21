@@ -11,8 +11,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
     exports: [
@@ -25,7 +26,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatListModule,
         MatTableModule,
         MatBadgeModule,
-        MatSnackBarModule
+        MatSnackBarModule,
+        MatFormFieldModule,
+        MatOptionModule,
+        MatSelectModule
     ],
     declarations: [],
     imports: [

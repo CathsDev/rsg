@@ -1,2 +1,16 @@
 <rsg-toolbar></rsg-toolbar>
-<p>single-trait works!</p>
+<div class="srg-body">
+    <h4>Ein einzelnes Merkmal auswählen</h4>
+    <mat-form-field appearance="fill">
+        <mat-label>Merkmal auswählen</mat-label>
+        <mat-select [(value)]="selectedTrait">
+            <mat-option *ngFor="let trait of traits" [value]="trait.id">
+                {{trait.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <p>Trait-Id: {{ selectedTrait }}</p>
+
+    <button mat-raised-button (click)="generateRandomTrait()">Zufallsmerkmal</button>
+    <p>Merkmal: </p>
+</div>
