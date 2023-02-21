@@ -1,0 +1,11 @@
+<button mat-icon-button
+        [matMenuTriggerFor]="menu"
+        class=""
+        aria-label="Icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>Alle Merkmale</button>
+    <button mat-menu-item>Ein Merkmal</button>
+    <button mat-menu-item>Kleinkind Merkmale</button>
+</mat-menu>
