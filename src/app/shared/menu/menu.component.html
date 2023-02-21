@@ -5,7 +5,8 @@
     <mat-icon>menu</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-    <button mat-menu-item>Alle Merkmale</button>
-    <button mat-menu-item>Ein Merkmal</button>
-    <button mat-menu-item>Kleinkind Merkmale</button>
+    <button mat-menu-item [routerLink]="''">Home</button>
+    <button mat-menu-item [routerLink]="'/all-traits'">Alle Merkmale</button>
+    <button mat-menu-item [routerLink]="'/single-trait'">Ein Merkmal</button>
+    <button mat-menu-item [routerLink]="'/toddler-traits'">Kleinkind Merkmale</button>
 </mat-menu>
